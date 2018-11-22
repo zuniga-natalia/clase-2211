@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>SVG</title>
+  </head>
+  <body>
+   <div class="container">
+       <div class="row py-5" id="espacio">
+           </div>
+       </div>
+      
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+      <script>
+          var valores = [250,200,10];
+          var cuestion = d3.select("#espacio")
+          .append("svg").attr("width",500)
+          .attr("height",400)
+          .style("background","blue");
+          
+          cuestion.append("circle")
+          .attr("cx","250")
+          .attr("cy", "200")
+          .attr("r", 50)
+          .attr("fill", "white");
+      </script>
+</body>
+</html>
